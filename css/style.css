@@ -1,0 +1,228 @@
+link body {
+  margin: 0;
+  padding: 0;
+  background-color: #b4cded;
+}
+
+.nombre {
+  width: 100%;
+  height: 300px;
+  background-color: #344966;
+  transform: skewY(-3rad);
+}
+
+.img1 {
+  position: absolute;
+  padding-right: 45px;
+  top: 35%;
+  left: 10%;
+  width: 200px;
+  height: 250px;
+  transform: skewY(3rad);
+  border-radius: 25%;
+  overflow: hidden;
+}
+
+.contenido {
+  width: 250px;
+  height: 150px;
+  position: absolute;
+  left: 65%;
+}
+
+.texto1 {
+  color: #f0f4ef;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 50px;
+  transform: skewY(3rad);
+  padding-top: 20px;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+
+.texto2 {
+  color: #f0f4ef;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bolder;
+  font-size: 30px;
+  transform: skewY(3rad);
+  margin-top: 0px;
+}
+
+.info {
+  width: 50%;
+  height: auto;
+  background-color: #bfcc94;
+  position: relative;
+  margin: 15px;
+  top: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  font-size: large;
+}
+
+.info2 {
+  width: 90%;
+  height: auto;
+  background-color: #bfcc94;
+  position: relative;
+  margin: 15px;
+  top: 100px;
+  padding: 10px;
+  border-radius: 15px;
+}
+
+.campo1 {
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+}
+
+.campo2 {
+  color: #344966;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 25%;
+}
+
+.titulo {
+  width: 86%;
+  height: auto;
+  background-color: #bfcc94;
+  color: black;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+#icons {
+  height: 70px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input#open {
+  background: rgba(0, 0, 0, 0.7);
+  color: #b4cded;
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.modal {
+  width: 450px;
+  position: fixed;
+  bottom: 100px;
+  left: 30%;
+}
+
+/* ACA VAN ALOJADAS LAS IMAGENES DE LOS POPUPS */
+/* hay que activarle el display para ver la imagen */
+
+.modal_container {
+  margin: auto;
+  border: black solid 1px;
+  width: 90%;
+  max-width: 400px;
+  max-height: 90%;
+  border-radius: 10px;
+  padding: 10px 10px;
+  display: grid;
+  background-color: aliceblue;
+  display: none;
+}
+
+.modal_paragraph {
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  font-weight: bold;
+}
+
+.modal_img {
+  width: 100%;
+  padding: 0;
+  border-radius: 20px;
+}
+
+.modal_close {
+  background-color: #bfcc94;
+  font-family: "Ubuntu", sans-serif;
+  font-size: large;
+  font-weight: bold;
+  border: 1px solid #344966;
+  border-radius: 3px;
+  width: 70px;
+  padding-left: 20px;
+  display: inline-block;
+}
+
+.modal_show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.formulario {
+  width: 500px;
+  max-width: 100%;
+  margin: auto;
+  margin-top: 20px;
+  background-color: #bfcc94;
+  padding: 15px;
+  border-radius: 10px;
+  position: absolute;
+  left: 55%;
+  top: 47%;
+}
+
+.formulario__titulo {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  margin-top: 0;
+}
+.formulario__input,
+.formulario__label,
+.formulario__submit {
+  display: block;
+  width: 90%;
+  font-size: 1.3em;
+  font-family: "Ubuntu", sans-serif;
+}
+.formulario__input {
+  padding: 20px;
+  background: rgba(46, 98, 105, 0.1);
+  border: 1px solid white;
+  margin-bottom: 35px;
+  border-radius: 4px;
+}
+.formulario__input:focus + .formulario__label {
+  margin-top: -135px;
+}
+
+.formulario__label {
+  padding-left: 15px;
+  position: absolute;
+  margin-top: -85px;
+  z-index: 0;
+  color: rgba(0, 0, 0, 0.6);
+  transition: all 0.05s;
+}
+.formulario__submit {
+  background: rgba(0, 0, 0, 0.7);
+  color: bisque;
+  padding: 20px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.desplazar {
+  margin-top: -135px;
+}
